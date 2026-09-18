@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f8f4;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+/* Sections */
+
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.home {
+    text-align: center;
+    background-color: #e4f5e4;
+    max-width: none;
+    padding: 80px 20px;
+}
+
+.home h2 {
+    font-size: 40px;
+    color: green;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+
+/* Forms */
+
+form {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ccc;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+/* Food */
+
+#search {
+    max-width: 400px;
+}
+
+.food {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.food h3 {
+    color: green;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

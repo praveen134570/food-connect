@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>FoodConnect</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#donate">Donate Food</a>
+        <a href="#find">Find Food</a>
+        <a href="#request">Request Food</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+
+<!-- HOME -->
+
+<section id="home" class="home">
+
+    <h2>Share Food, Help People</h2>
+
+    <p>
+        FoodConnect helps people share extra food with
+        people who need it.
+    </p>
+
+    <button onclick="goToDonate()">Donate Food</button>
+    <button onclick="goToFind()">Find Food</button>
+
+</section>
+
+
+<!-- DONATE FOOD -->
+
+<section id="donate">
+
+    <h2>Donate Food</h2>
+
+    <form id="donateForm">
+
+        <label>Food Name</label>
+        <input type="text" id="foodName" required>
+
+        <label>Food Type</label>
+        <select id="foodType">
+            <option>Vegetarian</option>
+            <option>Non-Vegetarian</option>
+            <option>Fruits</option>
+            <option>Bakery</option>
+        </select>
+
+        <label>Quantity</label>
+        <input type="number" id="quantity" required>
+
+        <label>Location</label>
+        <input type="text" id="location" required>
+
+        <label>Contact Number</label>
+        <input type="text" id="contact" required>
+
+        <button type="submit">Donate Food</button>
+
+    </form>
+
+</section>
+
+
+<!-- FIND FOOD -->
+
+<section id="find">
+
+    <h2>Find Available Food</h2>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search food..."
+        onkeyup="searchFood()"
+    >
+
+    <div id="foodList">
+
+        <div class="food">
+            <h3>Vegetable Rice</h3>
+            <p>Type: Vegetarian</p>
+            <p>Quantity: 30 Meals</p>
+            <p>Location: Vijayawada</p>
+            <button onclick="requestFood('Vegetable Rice')">
+                Request
+            </button>
+        </div>
+
+        <div class="food">
+            <h3>Idly & Sambar</h3>
+            <p>Type: Vegetarian</p>
+            <p>Quantity: 20 Meals</p>
+            <p>Location: Guntur</p>
+            <button onclick="requestFood('Idly & Sambar')">
+                Request
+            </button>
+        </div>
+
+        <div class="food">
+            <h3>Bread & Fruits</h3>
+            <p>Type: Bakery</p>
+            <p>Quantity: 15 Packets</p>
+            <p>Location: Vijayawada</p>
+            <button onclick="requestFood('Bread & Fruits')">
+                Request
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REQUEST FOOD -->
+
+<section id="request">
+
+    <h2>Request Food</h2>
+
+    <form id="requestForm">
+
+        <label>Your Name</label>
+        <input type="text" required>
+
+        <label>Organization</label>
+        <input type="text">
+
+        <label>Required Quantity</label>
+        <input type="number" required>
+
+        <label>Purpose</label>
+        <textarea required></textarea>
+
+        <button type="submit">Submit Request</button>
+
+    </form>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h2>About FoodConnect</h2>
+
+    <p>
+        FoodConnect is a simple platform that connects people
+        who have extra food with people who need food.
+    </p>
+
+    <p>
+        Our goal is to reduce food waste and help communities.
+    </p>
+
+</section>
+
+
+<footer>
+    <p>© 2026 FoodConnect | Share Food • Reduce Waste</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
